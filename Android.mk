@@ -12,8 +12,9 @@ common_src_files := \
 	fs/Ext4.cpp \
 	fs/F2fs.cpp \
 	fs/Ntfs.cpp \
+	fs/Hfsplus.cpp \
 	fs/Vfat.cpp \
-	fs/fsexist.c \
+	fsexist.c \
 	Loop.cpp \
 	Devmapper.cpp \
 	ResponseCode.cpp \
@@ -57,6 +58,7 @@ common_shared_libraries := \
 	libhardware \
 	libsoftkeymaster \
 	libbase \
+	libext2_blkid \
 
 common_static_libraries := \
 	libfs_mgr \
